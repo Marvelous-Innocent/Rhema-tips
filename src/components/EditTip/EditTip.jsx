@@ -1,6 +1,6 @@
 import {useState} from 'react';
 import Button from '../Button/Button';
-import './edittip.css'
+import './editTip.css'
 
 const EditTip = ({onEdit, onShowEditTip, tipEdit}) => {
     const [tipTitle, setTipTitle] = useState(tipEdit.title)
