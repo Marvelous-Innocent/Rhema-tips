@@ -1,0 +1,17 @@
+.searchContainer {
+    background-color: rgba(2, 2, 69, 1);
+    width: 100%;
+    padding: 15px;
+    margin: 0;
+}
+.searchContainer input {
+    display: block;
+    margin: 0 auto;
+    width: 90%;
+    height: 40px;
+    padding: 5px 8px;
+    font-size: 16px;
+    border-radius: 5px;
+    outline: none;
+    border: 2px solid rgba(2, 2, 69, 1);
+}

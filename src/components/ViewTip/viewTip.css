@@ -1,0 +1,45 @@
+.viewContainer {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    width: 100%;
+    height: calc(100% - 70px);
+    top: 0;
+    left: 0;
+    background-color: white;
+    z-index: 3;
+    border-radius: 14.5px 14.5px 0 0;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+.viewHeader {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 15px;
+    max-width: 100%;
+    background-color: rgba(2, 2, 69, 1);
+    color: white;
+}
+.viewContainer .viewHeader .btnContainer {
+    display: flex;
+    align-items: flex-start;    
+    justify-content: space-between;
+}
+.viewContainer .viewHeader .titleDetails {
+    max-width: 70%;
+}
+.viewContainer .viewHeader .titleDetails h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+.viewContainer .viewHeader .titleDetails .tipDate, .titleDetails .tipAuthor {
+    font-size: 12px;
+    margin-bottom: 5px;
+}
+.viewContainer .viewContent {
+    padding: 15px 15px 20px 15px;
+    width: 100%;
+    height: 100%;
+    color: rgba(2, 2, 69, 1);
+}

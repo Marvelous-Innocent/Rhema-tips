@@ -1,0 +1,105 @@
+header {
+    border-radius: 15px 15px 0 0;
+    background-color: rgba(2, 2, 69, 1);
+    margin: 0px;
+    padding: 20px;
+    color: #efefef;
+}
+header nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+header .logo {
+    font-size: 25px;
+    font-weight: bold;
+}
+header .sideNav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+header .sideNav button {
+    margin-right: 10px;
+}
+header .account {
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+
+/* The actual popup (appears on top) */
+header  .popupContianer {
+    display: none;
+    width: 150px;
+    text-align: center;
+    border-radius: 6px;
+    padding: 8px 0;
+    position: fixed;
+    top: 8%;
+    left: 53%;
+    z-index: 2;
+    list-style: none;
+    background-color: rgba(2, 2, 69, 1);
+    border: 2px solid #555;
+    color: red;
+    margin: 0;
+    padding: 0;
+}
+
+/* Popup arrow */
+/*header .account .popupContianer::before {
+    content: "";
+    position: absolute;
+    bottom: 88%;
+    left: 83%;
+    margin-left: -5px;
+    border-width: 6px;
+    border-style: solid;
+    border-color: #555 transparent transparent #555;
+    transform: rotate(45deg);
+}*/
+
+/* Toggle this class when clicking on the popup container (hide and show the popup) */
+header .show {
+    visibility: visible;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 0.5s
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity:1 ;}
+}
+
+header ul li{
+    display: block;
+    padding: 10px;
+    color: white;
+    border-bottom: 1px solid #efefef;
+    text-align: left;
+    cursor: pointer;
+}
+header ul li:last-child {
+    border-bottom: none;
+}
+header ul li:hover {
+    background-color: rgba(2, 2, 40, 0.2);
+}
+header ul li .nav {
+    display: flex;
+    align-items: center;
+}
+header ul li .nav .icon {
+    font-size: 19px;
+    margin: 5px 5px 0 0;
+}

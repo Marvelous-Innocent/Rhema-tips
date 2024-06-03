@@ -1,0 +1,19 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: #efefef;
+    padding: 10px 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.container {
+    margin: 15px auto;
+    position: relative;
+    min-height: calc(100vh - 10px);
+    max-width: 350px;
+    background-color: white;
+    border-radius: 15px;
+    padding: 0px;
+} 
